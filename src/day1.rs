@@ -18,3 +18,13 @@ pub fn day1part1() {
 
     println!("Day1 Part1 Solution: {}", increases);
 }
+
+pub fn day1part2() {
+    let depths = parse_input();
+    let increases = depths
+        .windows(4)
+        .filter(|x| (x[0] + x[1] + x[2]) < (x[1] + x[2] + x[3]))
+        .count();
+
+    println!("Day1 Part2 Solution: {}", increases);
+}
