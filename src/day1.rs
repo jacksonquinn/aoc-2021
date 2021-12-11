@@ -1,4 +1,4 @@
-use crate::utils::read_lines;
+use crate::shared::read_lines;
 
 const INPUT_FILE: &str = "./inputs/day1.txt";
 
