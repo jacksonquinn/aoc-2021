@@ -11,10 +11,7 @@ pub fn parse_input() -> Vec<u16> {
 
 pub fn day1part1() {
     let depths = parse_input();
-    let increases = depths
-        .windows(2)
-        .filter(|x| x[0] < x[1])
-        .count();
+    let increases = depths.windows(2).filter(|x| x[0] < x[1]).count();
 
     println!("Day1 Part1 Solution: {}", increases);
 }

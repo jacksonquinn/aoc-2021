@@ -12,6 +12,6 @@ fn main() {
         "day1part2" => day1::day1part2(),
         "day2part1" => day2::day2part1(),
         "day2part2" => day2::day2part2(),
-        _ => panic!("problem name {} not found", problem)
+        _ => panic!("problem name {} not found", problem),
     }
 }
