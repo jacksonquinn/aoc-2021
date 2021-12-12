@@ -1,5 +1,6 @@
 mod day1;
 mod day2;
+mod day3;
 mod shared;
 
 #[macro_use]
@@ -12,6 +13,7 @@ fn main() {
         "day1part2" => day1::day1part2(),
         "day2part1" => day2::day2part1(),
         "day2part2" => day2::day2part2(),
+        "day3part1" => day3::day3part1(),
         _ => panic!("problem name {} not found", problem),
     }
 }
